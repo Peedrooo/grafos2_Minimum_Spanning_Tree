@@ -18,7 +18,6 @@ pygame.display.set_caption("Minimal Spanning Tree")
 # Graph
 nodes = []
 edges = []
-
 node_color = BLUE
 
 # Main loop
