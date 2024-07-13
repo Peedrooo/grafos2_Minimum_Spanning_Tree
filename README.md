@@ -3,7 +3,7 @@
 **Número da Lista**: 23<br>
 **Conteúdo da Disciplina**: Grafos 2<br>
 
-## Alunos
+### Alunos
 |Matrícula | Aluno |
 | -- | -- |
 | 19/0055006  |  Gian Medeiros Rosa |
