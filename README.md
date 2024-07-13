@@ -1,17 +1,22 @@
-# Documentação de Uso do Algoritmo para Visualização de Árvore Geradora Mínima
+# Minimum Spanning Tree
 
 **Número da Lista**: 23<br>
 **Conteúdo da Disciplina**: Grafos 2<br>
 
-### Alunos
+## Alunos
 |Matrícula | Aluno |
 | -- | -- |
 | 19/0055006  |  Gian Medeiros Rosa |
 | 20/0073249  |  Pedro Vitor Augusto de Jesus |
 
-### Descrição Geral
+## Sobre
 
 Este algoritmo é um aplicativo de interface gráfica que permite a criação e visualização de uma Árvore Geradora Mínima (MST) usando o algoritmo de Prim. A interface é construída utilizando a biblioteca `pygame` e permite a interação do usuário para adicionar nós e arestas ao grafo e, em seguida, calcular a MST.
+A ideia é que possa ser utilizado como uma ferramenta de aprendizado para visualizar o funcionamento do algoritmo de Prim e a construção de uma MST.
+
+## Screenshots
+
+## Instalação
 
 ### Pré-requisitos
 
@@ -23,14 +28,13 @@ Este algoritmo é um aplicativo de interface gráfica que permite a criação e 
   - `src.front.edge`
   - `src.front.node`
 
-### Instalação
 
 1. **Instale o pygame:**
    ```sh
    pip install pygame
    ```
 
-### Execução do Programa
+## Uso
 
 1. **Execute o script `main.py`:**
    ```sh
@@ -64,7 +68,7 @@ Este algoritmo é um aplicativo de interface gráfica que permite a criação e 
 1. Pressione a tecla `R` para resetar as cores das arestas.
 
 
-### Observações
+## Outros
 
 - A interação é baseada em eventos do pygame, como cliques e pressionamento de teclas.
 - O cálculo da MST utiliza o algoritmo de Prim, implementado no módulo `Graph`.
