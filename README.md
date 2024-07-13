@@ -1,4 +1,13 @@
-## Documentação de Uso do Algoritmo para Visualização de Árvore Geradora Mínima
+# Documentação de Uso do Algoritmo para Visualização de Árvore Geradora Mínima
+
+**Número da Lista**: 23<br>
+**Conteúdo da Disciplina**: Grafos 2<br>
+
+## Alunos
+|Matrícula | Aluno |
+| -- | -- |
+| 19/0055006  |  Gian Medeiros Rosa |
+| 20/0073249  |  Pedro Vitor Augusto de Jesus |
 
 ### Descrição Geral
 
