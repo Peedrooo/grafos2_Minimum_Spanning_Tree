@@ -13,12 +13,11 @@ font = pygame.font.Font(None, 32)
 
 # Window
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Redes Críticas")
+pygame.display.set_caption("Minimal Spanning Tree")
 
 # Graph
 nodes = []
 edges = []
-# lis_edges = []
 
 node_color = BLUE
 
@@ -126,11 +125,16 @@ class Interface:
                 elif event.type == pygame.KEYDOWN:
                     if event.key == pygame.K_SPACE:
                         minimal_tree = Graph(len(nodes), edges).run()
-                        # graph = Graph(nodes, edges)
-                        # graph.show()
-                        # color, criticos = graph.run()
-                        # self.critical_node(color, criticos)
-            
+                        for edge in edges:
+                            for minimal_edge in minimal_tree:
+                                if (
+                                    edge.start_node.id == minimal_edge[0] and edge.end_node.id == minimal_edge[1]) or (
+                                    edge.start_node.id == minimal_edge[1] and edge.end_node.id == minimal_edge[0]
+                                    ):
+                                    edge.toggle_color(GREEN)
+                    if event.key == pygame.K_r:
+                        for edge in edges:
+                            edge.toggle_color(WHITE)
             if self.dragging and self.selected_node is not None:
                 pos = pygame.mouse.get_pos()
                 self.selected_node.pos = pos

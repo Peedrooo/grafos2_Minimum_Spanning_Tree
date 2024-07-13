@@ -1,4 +1,4 @@
-from src.front.main import Interface
+from src.front.interface import Interface
 
 def main():
     interface = Interface()

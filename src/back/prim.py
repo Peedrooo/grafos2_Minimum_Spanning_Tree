@@ -3,6 +3,7 @@ class Graph:
         self.adj_matrix = [[0] * size for _ in range(size)]
         self.size = size
         self.vertex_data = [''] * size
+        self.minimal_spanning_tree = []
         
         for edge in edges:
             self.add_vertex_data(edge.start_node.id - 1, edge.start_node.id)
@@ -30,12 +31,12 @@ class Graph:
             in_mst[u] = True
 
             if parents[u] != -1:
-                print(f"{self.vertex_data[parents[u]]}-{self.vertex_data[u]} \t{self.adj_matrix[u][parents[u]]}")
-
+                self.minimal_spanning_tree.append((self.vertex_data[parents[u]], self.vertex_data[u], self.adj_matrix[u][parents[u]]))
             for v in range(self.size):
                 if 0 < self.adj_matrix[u][v] < key_values[v] and not in_mst[v]:
                     key_values[v] = self.adj_matrix[u][v]
                     parents[v] = u
 
     def run(self):
-        return self.prims_algorithm()
+        self.prims_algorithm()
+        return self.minimal_spanning_tree
