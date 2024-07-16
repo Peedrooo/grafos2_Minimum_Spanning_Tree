@@ -16,6 +16,9 @@ A ideia é que possa ser utilizado como uma ferramenta de aprendizado para visua
 
 ## Screenshots
 
+![image](https://github.com/user-attachments/assets/ae423559-2b30-4831-9b63-545e65c7d4be)
+![image](https://github.com/user-attachments/assets/25953580-83cb-441f-b9dd-e31cc8572598)
+
 ## Instalação
 
 ### Pré-requisitos
