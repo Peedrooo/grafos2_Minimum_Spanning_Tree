@@ -70,6 +70,9 @@ A ideia é que possa ser utilizado como uma ferramenta de aprendizado para visua
 
 1. Pressione a tecla `R` para resetar as cores das arestas.
 
+## Apresentação
+
+https://youtu.be/czThOZ6x0Wk
 
 ## Outros
 
